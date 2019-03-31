@@ -19,7 +19,6 @@ source gymEnv/bin/activate
  pip -r requirements.txt
 ```
 >Run Training.py
-***If running for first time then commit 
-The line in Training.py
 
->R
+
+***If running for first time then commit the line in Training.py
