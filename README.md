@@ -19,6 +19,9 @@ source gymEnv/bin/activate
  pip -r requirements.txt
 ```
 >Run Training.py
+```sh
+python Training.py
+```
 
 
 ***If running for first time then commit the line in Training.py
