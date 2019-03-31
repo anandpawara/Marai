@@ -8,9 +8,11 @@ env = retro.make(game="SuperMarioBros-Nes", state="Level1-1")
 imgarray = []
 xpos_end = 0
 
+# If running for first time the comment the following
+#**********************************
 resume = True
 restore_file = "checkpoints/neat-checkpoint-23"
-
+#*************************************
 
 def eval_genomes(genomes, config):
 
@@ -71,12 +73,16 @@ def eval_genomes(genomes, config):
 config = neat.Config(neat.DefaultGenome, neat.DefaultReproduction,
                      neat.DefaultSpeciesSet, neat.DefaultStagnation,
                      'config-feedforward2')
-
+#Comment the following if running for first time
+#***********************
 if resume == True:
     p = neat.Checkpointer.restore_checkpoint(restore_file)
 else:
     p = neat.Population(config)
+#********************
 
+# and uncomment this
+# p = neat.Population(config)
 
 p.add_reporter(neat.StdOutReporter(True))
 stats = neat.StatisticsReporter()
