@@ -16,7 +16,7 @@ source gymEnv/bin/activate
 
 >Installing dependencies 
 ```sh
- pip -r requirements.txt
+ pip install -r requirements.txt
 ```
 >Run Training.py
 ```sh
